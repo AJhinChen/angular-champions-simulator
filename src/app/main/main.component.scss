@@ -1,5 +1,5 @@
 app-main{
-  .logo{
+  .logo {
     position:absolute;
     left:100px;
     top:0;
@@ -9,7 +9,7 @@ app-main{
     background-image: url(../../assets/lol_logo.png);
     background-repeat:no-repeat;
   }
-  .main-background{
+  .main-background {
     position:absolute;
     top:90px;
     left: 0;
@@ -30,35 +30,68 @@ app-main{
     width: 100%;
     min-width:1280px;
   }
-  .main-items{
+  .main-items {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 25%;
-    min-width: 320px;
+    width: 24.21875%;
+    min-width: 310px;
     background-color: #00A383;
-    opacity: 0.2;
+    opacity: 0;
   }
-  .main-champions{
+  .main-champions {
     position: absolute;
-    top: 0;
-    left: 25%;
-    bottom: 0;
-    width: 50%;
-    min-width:640px;
-    background-color: #ffffff;
-    opacity: 0.2;
+    top: 150px;
+    left: 24.21875%;
+    width: 51.5625%;
+    height: 550px;
+    min-width:660px;
+    background-color: transparent;
+    overflow-y:scroll;
+    .champions-list {
+      background-color: transparent;
+      .champions-tile {
+        background-color: transparent !important;
+        div {
+          width: 66px;
+          button {
+            min-width: 66px;
+            padding: 0;
+          }
+          .name {
+            padding-top: 10px;
+            width: 66px;
+            color: #ffcb60;
+            font-size: 20px;
+            text-align: center;
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
   }
-  .main-data{
+  #main-champions::-webkit-scrollbar-thumb {
+    background-color: #ffcb60;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px;
+  }
+  #main-champions::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  .main-data {
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
-    width: 25%;
-    min-width: 320px;
+    width: 24.21875%;
+    min-width: 310px;
     background-color: #00A383;
-    opacity: 0.2;
+    opacity: 0;
   }
   .main-title {
     position: relative;
@@ -74,6 +107,18 @@ app-main{
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .main-search{
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    min-width: 660px;
+    width: auto;
+    left: 27%;
+    color: #ffcb60;
+    font-size: 30px;
+    line-height: 30px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2C333B), to(#142D30));
   }
   .sub-title {
     position: relative;

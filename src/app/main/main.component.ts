@@ -18,6 +18,50 @@ export class MainComponent implements OnInit {
 
   temps: any[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '='];
 
+  tiles = [
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+  ];
+
   constructor(private mainService: MainService) { }
 
   ngOnInit() {

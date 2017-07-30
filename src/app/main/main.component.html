@@ -15,20 +15,34 @@
     <!--<source src="../../assets/background.mp4" type='video/mp4'/>-->
     <source src="../../assets/kayn.webm" type='video/webm'/>
   </video>
+  <div class="main-title">选择你的英雄</div>
+  <input class="main-search" placeholder="搜索">
   <div class="main-items">
 
   </div>
-  <div class="main-champions">
-
+  <div class="main-champions" id="main-champions">
+    <md-grid-list class="champions-list" cols="6" rowHeight="110px">
+      <md-grid-tile class="champions-tile"
+        *ngFor="let tile of tiles"
+        [colspan]="1"
+        [rowspan]="1"
+        [style.background]="tile.color">
+        <div>
+          <button md-raised-button>
+            <img src="../../assets/default.png">
+          </button>
+          <div class="name">{{tile.text}}</div>
+        </div>
+      </md-grid-tile>
+    </md-grid-list>
   </div>
   <div class="main-data">
 
   </div>
-  <div class="main-title">选择你的英雄</div>
-  <div *ngFor="let title of temps">
-    <div class="sub-title">{{title}}</div>
-  </div>
-  <div *ngFor="let champion of champions">
+  <!--<div *ngFor="let title of temps">-->
+    <!--<div class="sub-title">{{title}}</div>-->
+  <!--</div>-->
+  <!--<div *ngFor="let champion of champions">-->
 
-  </div>
+  <!--</div>-->
 </div>
