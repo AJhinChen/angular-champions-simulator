@@ -16,11 +16,11 @@ app-main{
     right: 0;
     bottom: 0;
     width: 100%;
-    min-width:1280px;
+    min-width:1320px;
     contain:layout size style;
     overflow:hidden;
     background-color: #000000;
-    background-image: url(../../assets/bg-wrap.jpg);
+    // background-image: url(../../assets/bg-wrap.jpg);
     background-repeat:no-repeat;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
@@ -28,24 +28,24 @@ app-main{
   .container {
     position:absolute;
     width: 100%;
-    min-width:1280px;
+    min-width:1320px;
   }
   .main-items {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 24.21875%;
-    min-width: 310px;
+    width: 25%;
+    min-width: 330px;
     background-color: #00A383;
     opacity: 0;
   }
   .main-champions {
     position: absolute;
     top: 150px;
-    left: 24.21875%;
-    width: 51.5625%;
-    height: 550px;
+    left: calc(50% - 330px);
+    width: 660px;
+    height: 500px;
     min-width:660px;
     background-color: transparent;
     overflow-y:scroll;
@@ -54,14 +54,17 @@ app-main{
       .champions-tile {
         background-color: transparent !important;
         div {
-          width: 66px;
+          width: 70px;
           button {
-            min-width: 66px;
+            min-width: 70px;
             padding: 0;
+            img {
+              width: 70px;
+            }
           }
           .name {
             padding-top: 10px;
-            width: 66px;
+            width: 70px;
             color: #ffcb60;
             font-size: 20px;
             text-align: center;
@@ -88,15 +91,15 @@ app-main{
     right: 0;
     top: 0;
     bottom: 0;
-    width: 24.21875%;
-    min-width: 310px;
+    width: 25%;
+    min-width: 330px;
     background-color: #00A383;
     opacity: 0;
   }
   .main-title {
     position: relative;
     height: 50px;
-    min-width:1280px;
+    min-width:1320px;
     width: auto;
     margin-top: 30px;
     color: #ffcb60;
@@ -114,7 +117,7 @@ app-main{
     height: 50px;
     min-width: 660px;
     width: auto;
-    left: 27%;
+    left: calc(50% - 330px);
     color: #ffcb60;
     font-size: 30px;
     line-height: 30px;
@@ -123,7 +126,7 @@ app-main{
   .sub-title {
     position: relative;
     height: 50px;
-    min-width:1280px;
+    min-width:1320px;
     width: auto;
     margin-top: 130px;
     color: #ffcb60;
