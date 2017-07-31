@@ -13,7 +13,7 @@
 <div class="main-background">
   <video class="container" autoplay="autoplay" loop>
     <!--<source src="../../assets/background.mp4" type='video/mp4'/>-->
-    <source src="../../assets/kayn.webm" type='video/webm'/>
+    <source src="assets/kayn.webm" type='video/webm'/>
   </video>
   <div class="main-title">选择你的英雄</div>
   <input class="main-search" placeholder="搜索">
@@ -29,7 +29,7 @@
         [style.background]="tile.color">
         <div>
           <button md-raised-button>
-            <img src="../../assets/default.png">
+            <img src="http://img4.imgtn.bdimg.com/it/u=2717802571,3660116983&fm=26&gp=0.jpg">
           </button>
           <div class="name">{{tile.text}}</div>
         </div>
@@ -46,3 +46,5 @@
 
   <!--</div>-->
 </div>
+
+<router-outlet></router-outlet>

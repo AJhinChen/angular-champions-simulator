@@ -1,6 +1,7 @@
 {
   "name": "angular-champions-simulator",
   "version": "0.0.1",
+  "main": "main.js",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
