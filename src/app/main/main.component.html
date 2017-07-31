@@ -23,16 +23,15 @@
   <div class="main-champions" id="main-champions">
     <md-grid-list class="champions-list" cols="6" rowHeight="110px">
       <md-grid-tile class="champions-tile"
-        *ngFor="let tile of tiles"
+        *ngFor="let champion of champions"
         [colspan]="1"
-        [rowspan]="1"
-        [style.background]="tile.color">
+        [rowspan]="1">
         <div>
           <button md-raised-button>
             <img src="http://img4.imgtn.bdimg.com/it/u=2717802571,3660116983&fm=26&gp=0.jpg">
           </button>
-          <div class="name">{{tile.text}}</div>
         </div>
+          <div class="name">{{champion.name}}</div>
       </md-grid-tile>
     </md-grid-list>
   </div>

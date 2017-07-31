@@ -9,7 +9,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class MainService {
 
-  API_KEY = 'RGAPI-ad3f0037-133f-4f76-b38d-01444ecf573f';
+  API_KEY = 'RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
 
   RIOT_SERVER = 'https://na1.api.riotgames.com';
 
@@ -23,7 +23,7 @@ export class MainService {
 
   OTHERS_PARAM = 'dataById=false';
 
-  url = 'https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-ad3f0037-133f-4f76-b38d-01444ecf573f';
+  url = 'https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
 
   constructor(private http: Http) { }
 
@@ -38,7 +38,7 @@ export class MainService {
   getChampionList(): Promise<any> {
     return this.http.get(this.url)
       .toPromise()
-      .then(response => response.json().data as any)
+      .then(response => response.json().data.json())
       .catch(this.handleError);
   }
   private handleError(error: any): Promise<any> {
