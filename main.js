@@ -12,10 +12,11 @@ function createWindow() {
     var size = electronScreen.getPrimaryDisplay().workAreaSize;
     // Create the browser window.
     win = new electron_1.BrowserWindow({
-        x: 0,
-        y: 0,
-        width: size.width,
-        height: size.height
+        center: true,
+        width: 1320,
+        height: 900,
+        minWidth: 1320,
+        minHeight: 900
     });
     // and load the index.html of the app.
     win.loadURL('file://' + __dirname + '/index.html');
