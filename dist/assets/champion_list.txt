@@ -1,0 +1,89 @@
+首页英雄选择调用接口
+LOL-STATIC-DATA-V3
+请求Heather
+REQUEST HEADERS
+{
+    "Origin": "https://developer.riotgames.com",
+    "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+    "X-Riot-Token": "RGAPI-ad3f0037-133f-4f76-b38d-01444ecf573f",
+    "Accept-Language": "zh-CN,zh;q=0.8",
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36"
+}
+
+1.获取英雄姓名和图片名称列表
+REQUEST URL
+https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=zh_CN&tags=image&dataById=false
+
+2.获取物品和图片的名称列表
+REQUEST URL
+https://na1.api.riotgames.com/lol/static-data/v3/items?locale=zh_CN&tags=image
+
+3.获取符文和图片的名称列表
+REQUEST URL
+https://na1.api.riotgames.com/lol/static-data/v3/runes?locale=zh_CN&tags=image
+
+4.获取召唤师技能和图片的名称列表
+REQUEST URL
+https://na1.api.riotgames.com/lol/static-data/v3/summoner-spells?locale=zh_CN&dataById=false
+
+5.根据图片名获取图片
+Profile Icons: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/588.png 
+
+Champions (Splash Art):
+http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg
+
+Champions (Loading Screen Art):
+http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg
+
+The number at the end of the image follows the same convention described in Champions (Splash Art).
+
+Champions (Square): 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/Aatrox.png 
+
+Champion Abilities: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/FlashFrost.png 
+
+Summoner Spells: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/SummonerFlash.png 
+
+Items: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/item/1001.png 
+
+Masteries: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/mastery/6111.png 
+
+Runes:
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/rune/8001.png 
+
+Sprites:
+http://ddragon.leagueoflegends.com/cdn/6.24.1/img/sprite/spell0.png 
+
+Minimaps (version 6.8.1):
+http://ddragon.leagueoflegends.com/cdn/6.8.1/img/map/map11.png 
+
+Scoreboard Icons (version 5.5.1):
+http://ddragon.leagueoflegends.com/cdn/5.5.1/img/ui/champion.png
+
+Data (version 6.24.1)
+
+Profile Icons: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/profileicon.json 
+
+Champions: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json 
+
+Individual Champions: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion/Aatrox.json 
+
+Items: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/item.json 
+
+Masteries: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/mastery.json 
+
+Runes: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/rune.json 
+
+Summoner Spells: 
+http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/summoner.json 
