@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { ChampionListDto } from '../models/ChampionListDto';
 import { Headers, Http } from '@angular/http';
-import 'rxjs/add/operator/map';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -23,26 +21,46 @@ export class MainService {
 
   OTHERS_PARAM = 'dataById=false';
 
-  url = 'https://na1.api.riotgames.com/lol/static-data/v3/champions?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
+  championListUrl = 'https://kr.api.riotgames.com/lol/static-data/v3/champions?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
+
+  itemListUrl = 'https://kr.api.riotgames.com/lol/static-data/v3/items?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
+
+  runeListUrl = 'https://kr.api.riotgames.com/lol/static-data/v3/runes?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
+
+  masteryListUrl = 'https://kr.api.riotgames.com/lol/static-data/v3/masteries?locale=zh_CN&tags=image&dataById=false&api_key=RGAPI-5fd923b1-f4dd-43e2-98f3-c8d76f3a1650';
 
   constructor(private http: Http) { }
 
-  getChampions() {
-    this.http.get(this.url) // (4)
-      .map(res => res.json()) // (5)
-      .subscribe(data => {
-        console.log(data);
-      });
-  }
-
-  getChampionList(): Promise<any> {
-    return this.http.get(this.url)
-      .toPromise()
-      .then(response => response.json().data.json())
-      .catch(this.handleError);
-  }
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only
     return Promise.reject(error.message || error);
+  }
+
+  getChampionList(): Promise<any> {
+    return this.http.get(this.championListUrl)
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
+  }
+
+  getItemList(): Promise<any> {
+    return this.http.get(this.itemListUrl)
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
+  }
+
+  getRuneList(): Promise<any> {
+    return this.http.get(this.runeListUrl)
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
+  }
+
+  getMasteryList(): Promise<any> {
+    return this.http.get(this.masteryListUrl)
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
   }
 }

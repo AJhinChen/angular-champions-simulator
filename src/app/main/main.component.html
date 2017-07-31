@@ -28,7 +28,11 @@
         [rowspan]="1">
         <div>
           <button md-raised-button>
-            <img src="{{'http://ossweb-img.qq.com/images/lol/img/champion/' + champion.image.full}}">
+            <!--国服版本图片-->
+            <!--<img src="{{'http://ossweb-img.qq.com/images/lol/img/champion/' + champion.image.full}}">-->
+            <!--拳头API图片-->
+            <img src="{{'http://ddragon.leagueoflegends.com/cdn/' + version + '/img/champion/' + champion.image.full}}">
+            <!--<img src="{{'http://ddragon.leagueoflegends.com/cdn/' + version + '/img/item/' + champion.image.full}}">-->
           </button>
         </div>
           <div class="name">{{champion.name}}</div>

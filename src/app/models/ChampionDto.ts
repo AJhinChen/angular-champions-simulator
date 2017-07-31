@@ -29,7 +29,7 @@ export class ChampionDto {
   @JsonMember
   title:	string;
 
-  @JsonMember({ elements: ImageDto })
+  @JsonMember
   image:	ImageDto;
 
   @JsonMember
@@ -41,7 +41,7 @@ export class ChampionDto {
   @JsonMember({ elements: SkinDto })
   skins:	SkinDto[];
 
-  @JsonMember({ elements: PassiveDto })
+  @JsonMember
   passive: PassiveDto;
 
   @JsonMember({ elements: RecommendedDto })

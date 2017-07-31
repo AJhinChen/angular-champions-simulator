@@ -13,10 +13,10 @@ function createWindow() {
     // Create the browser window.
     win = new electron_1.BrowserWindow({
         center: true,
-        width: 1320,
-        height: 900,
-        minWidth: 1320,
-        minHeight: 900
+        width: 1680,
+        height: 1050,
+        minWidth: 1680,
+        minHeight: 1050
     });
     // and load the index.html of the app.
     win.loadURL('file://' + __dirname + '/index.html');

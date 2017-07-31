@@ -16,7 +16,7 @@ app-main{
     right: 0;
     bottom: 0;
     width: 100%;
-    min-width:1320px;
+    min-width:1330px;
     contain:layout size style;
     overflow:hidden;
     background-color: #000000;
@@ -28,7 +28,7 @@ app-main{
   .container {
     position:absolute;
     width: 100%;
-    min-width:1320px;
+    min-width:1330px;
   }
   .main-items {
     position: absolute;
@@ -36,17 +36,17 @@ app-main{
     top: 0;
     bottom: 0;
     width: 25%;
-    min-width: 330px;
+    min-width: 332.5px;
     background-color: #00A383;
     opacity: 0;
   }
   .main-champions {
     position: absolute;
-    top: 150px;
-    left: calc(50% - 330px);
-    width: 660px;
-    height: 500px;
-    min-width:660px;
+    top: 120px;
+    left: calc(50% - 332.5px);
+    width: 670px;
+    height: 560px;
+    min-width:670px;
     background-color: transparent;
     overflow-y:scroll;
     .champions-list {
@@ -55,7 +55,7 @@ app-main{
         background-color: transparent !important;
         .name {
           position: absolute;
-          margin-top: 50px;
+          margin-top: 46px;
           width: 100%;
           height: 26px;
           color: #ffcb60;
@@ -63,15 +63,16 @@ app-main{
           text-align: center;
           background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
           -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
         div {
-          width: 70px;
+          width: 80px;
           button {
-            min-width: 70px;
+            min-width: 80px;
             padding: 0;
+            background-color: transparent;
             img {
-              width: 70px;
+              width: 80px;
+              padding-bottom: 16px;
             }
           }
         }
@@ -94,14 +95,14 @@ app-main{
     top: 0;
     bottom: 0;
     width: 25%;
-    min-width: 330px;
+    min-width: 332.5px;
     background-color: #00A383;
     opacity: 0;
   }
   .main-title {
     position: relative;
     height: 50px;
-    min-width:1320px;
+    min-width:1330px;
     width: auto;
     margin-top: 30px;
     color: #ffcb60;
@@ -116,19 +117,19 @@ app-main{
   .main-search{
     display: inline-block;
     position: relative;
-    height: 50px;
+    height: 25px;
     min-width: 660px;
     width: auto;
-    left: calc(50% - 330px);
+    left: calc(50% - 332.5px);
     color: #ffcb60;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2C333B), to(#142D30));
   }
   .sub-title {
     position: relative;
     height: 50px;
-    min-width:1320px;
+    min-width:1330px;
     width: auto;
     margin-top: 130px;
     color: #ffcb60;
